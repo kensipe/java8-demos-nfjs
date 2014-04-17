@@ -7,7 +7,7 @@ public class RunnableExample {
 
     public static void main(String[] args) {
 
-        Runnable runnable =() -> doStuff();
+        Runnable runnable = () -> doStuff();
         runnable.run();
 
         System.out.println("main ");

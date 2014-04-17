@@ -33,6 +33,7 @@ public class RemoveExample {
 
         PersonHelper.printPeople(people);
 
+        // older api
         //        Collections.removeAll(people,
         //                  new Predicate<Person>() {
         //                    @Override

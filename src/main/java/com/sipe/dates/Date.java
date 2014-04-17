@@ -30,8 +30,8 @@ public class Date {
 
         System.out.println(bday.plusMonths(3).minusDays(5));
 
-        LocalDate lastDay =  current.with(TemporalAdjusters.lastDayOfMonth());
-        LocalDate nextTuesday =  current.with(next(DayOfWeek.TUESDAY));
+        LocalDate lastDay = current.with(TemporalAdjusters.lastDayOfMonth());
+        LocalDate nextTuesday = current.with(next(DayOfWeek.TUESDAY));
 
         System.out.println("next tues: " + nextTuesday);
 

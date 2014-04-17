@@ -5,6 +5,7 @@ import com.sipe.lambda.PersonHelper;
 
 import java.util.Comparator;
 import java.util.List;
+
 import static java.lang.System.out;
 
 /**
@@ -23,7 +24,6 @@ public class Comparing {
                 p.getFirstName().compareTo(o.getFirstName()));
 
         people.sort(c);
-
 
         people.forEach(out::println);
 

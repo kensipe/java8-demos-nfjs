@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
+ *
+ * This is intended to be an example... not a running version of swing
  * @author kensipe
  */
 public class UglyButtons {
