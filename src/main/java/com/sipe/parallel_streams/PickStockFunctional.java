@@ -8,6 +8,7 @@
  ***/
 package com.sipe.parallel_streams;
 
+import java.time.Instant;
 import java.util.stream.Stream;
 
 /**
@@ -28,8 +29,11 @@ public class PickStockFunctional {
 
     public static void main(final String[] args) {
 
+        Instant start = Instant.now();
         findHighPriced(Tickers.symbols.stream());
-
 //        findHighPriced(Tickers.symbols.parallelStream());
+
+        Instant end = Instant.now();
+        System.out.println(end.toEpochMilli() - start.toEpochMilli());
     }
 }
