@@ -6,14 +6,20 @@ sourceCompatibility = 1.8
 version = '1.0'
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 
 idea {
-    project {
-        javaVersion = 1.8
-        jdkName = '1.8'
+  project {
+    jdkName = '1.8'
+    languageLevel = '1.8'
+    ipr {
+      withXml { provider ->
+        provider.node.component
+          .find { it.@name == 'VcsDirectoryMappings' }
+          .mapping.@vcs = 'Git'
+      }
     }
+  }
 }
-

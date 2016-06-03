@@ -1,6 +1,7 @@
 out
 .idea
 .DS_Store
-*.iml
+*.i??
 .gradle
 build
+src/main/java/com/sipe/sort/
